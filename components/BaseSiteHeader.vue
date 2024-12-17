@@ -4,7 +4,7 @@
       <div href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">Your Company</span>
         <a class="text-2xl font-black font-Paperlogy9Black" href="javascript:void(0)" @click="navigateTo('/')">
-          <img src="/Header/111.png" class="w-20"/>
+          <img src="/Header/111.png" class="xl:w-32 w-24"/>
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -31,7 +31,7 @@
           <div href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <a class="text-2xl font-black font-Paperlogy9Black" href="javascript:void(0)" @click="navigateTo('/')">
-              <img src="/Header/111.png" class="w-20"/>
+              <img src="/Header/111.png" class="xl:w-32 w-24"/>
             </a>
           </div>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">

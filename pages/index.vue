@@ -1,53 +1,88 @@
 <template>
-    <div class="bg-[#E8E3E2] py-0 sm:py-0">
-      <div class="mx-auto px-6 lg:px-8">
-        <!-- <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></h2>
-          <p class="mt-6 text-lg leading-8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
-        </div> -->
-        <ul role="list" class="mx-auto mt-0 grid max-w-2xl grid-cols-2 gap-x-1 gap-y-1 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-          <li v-for="person in people" :key="person.name">
-            <img class="w-[100%] h-full" :src="person.imageUrl" alt="" />
-          </li>
-        </ul>
-      </div>
+  <div class="bg-[#E8E3E2] py-0 sm:py-0 xl:max-w-[80rem] xl:m-auto">
+    <div class="mx-auto px-6 lg:px-8">
+      <swiper
+        :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+        :slides-per-view="1"
+        :space-between="10"
+        :centered-slides="true"
+        :navigation="true"
+        :pagination="{ clickable: true }"
+        :autoplay="{
+          delay: 3000,
+          disableOnInteraction: false,
+        }"
+        :breakpoints="{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }"
+        class="w-full"
+      >
+        <swiper-slide v-for="person in people" :key="person.imageUrl" class="xl:flex items-center justify-center">
+          <div class="w-full flex items-center justify-center">
+            <img 
+              :src="person.imageUrl" 
+              alt="" 
+              class="xl:h-[90vh] w-auto object-contain mx-auto"
+            />
+          </div>
+        </swiper-slide>
+      </swiper>
     </div>
-  </template>
-  
-  <script setup>
-  const people = [
-    {
-      imageUrl:
-        '/main/main1.jpeg',
-    },
-    {
-      imageUrl:
-        '/main/main2.jpeg',
-    },
-    {
-      imageUrl:
-        '/main/main3.jpeg',
-    },
-    {
-      imageUrl:
-        '/main/main4.jpeg',
-    },
-    {
-      imageUrl:
-        '/main/main5.jpeg',
-    },
-    {
-      imageUrl:
-        '/main/main6.jpeg',
-    },
-    {
-      imageUrl:
-        '/main/main7.jpeg',
-    },
-    {
-      imageUrl:
-        '/main/main8.jpeg',
-    },
-    // More people...
-  ]
-  </script>
+  </div>
+</template>
+
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// Swiper modules
+const SwiperAutoplay = Autoplay;
+const SwiperPagination = Pagination;
+const SwiperNavigation = Navigation;
+
+const people = [
+  {
+    imageUrl: '/main/11.png',
+  },
+  {
+    imageUrl: '/main/22.png',
+  },
+  {
+    imageUrl: '/main/33.png',
+  },
+  {
+    imageUrl: '/main/44.png',
+  },
+];
+</script>
+
+<style>
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+</style>
