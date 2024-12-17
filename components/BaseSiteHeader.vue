@@ -1,9 +1,11 @@
 <template>
-  <header class="bg-white">
+  <header class="bg-[#E8E3E2]">
     <nav class="mx-auto flex items-center justify-between p-6 lg:px-12" aria-label="Global">
       <div href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">Your Company</span>
-        <a class="text-2xl font-black font-Paperlogy9Black" href="javascript:void(0)" @click="navigateTo('/')">HYEGYEONG LEE</a>
+        <a class="text-2xl font-black font-Paperlogy9Black" href="javascript:void(0)" @click="navigateTo('/')">
+          <img src="/Header/111.png" class="w-20"/>
+        </a>
       </div>
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
@@ -24,11 +26,13 @@
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-10" />
-      <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#E8E3E2] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
           <div href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <a class="text-2xl font-black font-Paperlogy9Black" href="javascript:void(0)" @click="navigateTo('/')">HYEGYEONG LEE</a>
+            <a class="text-2xl font-black font-Paperlogy9Black" href="javascript:void(0)" @click="navigateTo('/')">
+              <img src="/Header/111.png" class="w-20"/>
+            </a>
           </div>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
