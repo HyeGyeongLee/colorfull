@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-[#E8E3E2]">
+  <header class="bg-[#E8E3E2] z-50">
     <nav class="mx-auto flex items-center justify-between p-6 lg:px-12" aria-label="Global">
       <div href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">Your Company</span>
@@ -68,7 +68,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/About' },
-  { name: 'Art work', href: '/ArtWork' },
 ]
 
 const mobileMenuOpen = ref(false)

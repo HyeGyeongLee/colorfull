@@ -1,33 +1,33 @@
 <template>
-  <div class="bg-gradient-to-br from-[#E8E3E2] to-[#ffffff] py-0 sm:py-0">
+  <div class="py-0 sm:py-0">
     <div class="mx-auto py-6">
-      <div class="relative xl:flex">
-        <div class="ml-2 xl:ml-[10%] mb-12 break-keep">
-            <!-- <div class="xl:text-[7rem] text-[2.5rem] leading-tight font-bold xl:mt-[10%] mt-12">
-              <div class="text-[#F2059F]">I.D.MO</div>
-              <div class="text-[#da289c]">SECOND</div>
-              <div class="text-[#b0207e]">EXHIBITION</div>
-            </div> -->
-
-            <div class="font-[Calligraffitti] font-bold xl:text-[8rem] text-[4rem] tracking-[0.02em] text-[#ffe77d]" style="text-shadow: 5px 5px 0px #FFB650, 
-              10px 10px 0px #FFD662, 
-              15px 15px 0px #FF80BF, 
-              20px 20px 0px #EF5097, 
-              25px 25px 0px #6868AC, 
-              30px 30px 0px #90B1E0;">
+      <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+          <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div class="text-center">
+            <div class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+              <div class="text-black xl:text-[7rem] text-[3rem] font-bold">
               <div>I.D.MO</div>
               <div>SECOND</div>
               <div>EXHIBITION</div>
               <div >COLORFULL</div>
             </div>
-
-            <!-- <div class="text-black xl:text-[8rem] text-[4rem] font-bold">
-              <div>I.D.MO</div>
-              <div>SECOND</div>
-              <div>EXHIBITION</div>
-              <div >COLORFULL</div>
-            </div> -->
+          </div>
+            <p class="mt-8 text-pretty font-medium text-gray-500 xl:text-lg text-[1rem] break-keep">우리끼리 만드는 작은 전시회. 서로 다른 모습과 생각을 가진 우리들이 모여 각자의 이야기를 펼쳐냅니다.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+              <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
         </div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+          <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+      </div>
+
+      <div class="relative xl:flex mb-12">
           <swiper
             :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation, SwiperEffectFade]"
             :loop="true"
@@ -80,11 +80,11 @@
           About
         </button> -->
 
-        <div class="text-white text-center bg-gradient-to-br from-[#A9C9FF] to-[#FFBBEC] py-40">
-              <div class="text-[2em] font-bold mb-4 xl:mt-0 mt-[34rem]">우리끼리 만드는 작은 전시회</div>
-              <div class="text-[1.5em]">서로 다른 사람들, 서로 다른 색깔로</div>
-              <div class="text-[1.5em]">조화롭게 온 세상을 가득 채우고 싶은</div>
-              <div class="text-[1.5em]">마음들이 모였습니다.</div>
+        <div class="text-black text-center bg-[#FFBBEC] py-40 break-keep">
+              <div class="xl:text-[2em] text-[1.7rem] font-bold mb-4 xl:mt-0 mt-[34rem]">우리끼리 만드는 작은 전시회</div>
+              <div class="xl:text-[1.5em] text-[1.2rem]">서로 다른 사람들, 서로 다른 색깔로</div>
+              <div class="xl:text-[1.5em] text-[1.2rem]">조화롭게 온 세상을 가득 채우고 싶은</div>
+              <div class="xl:text-[1.5em] text-[1.2rem]">마음들이 모였습니다.</div>
           </div>
 
             <div class="">
@@ -95,22 +95,24 @@
                           :key="person.id" 
                           class="max-w-[800px] rounded-md shadow-2xl xl:overflow-hidden mb-8 mx-auto xl:w-[25rem] w-[11rem] bg-white"
                         >
-                      <div>
-                        <img :src="person.imageUrl" :alt="person.nickname" class="w-[30rem] block">
-                      </div>
-                      <div class="bg-white flex-1 p-8 flex flex-col">
-                        <div class="xl:flex items-center mb-5">
-                          <h1 class="text-base mr-auto text-blue-600">{{ person.nickname }} <i class="fas fa-fire text-salmon"></i></h1>
-                          <!-- <div v-for="tag in person.hashtags" :key="tag" 
-                              class="text-xs text-white px-2 py-0.5 rounded-full mr-2 uppercase"
-                              :class="tag.includes('1') ? 'bg-[#A9C9FF]' : 'bg-[#FFBBEC]'">
-                            {{ tag }}
-                          </div> -->
+                      <a :href="person.link">
+                        <div>
+                          <img :src="person.imageUrl" :alt="person.nickname" class="w-[30rem] block">
                         </div>
-                        <p class="text-sm">
-                          {{ person.introduction }}
-                        </p>
-                      </div>
+                        <div class="bg-white flex-1 p-8 flex flex-col">
+                          <div class="xl:flex items-center mb-5">
+                            <h1 class="text-base mr-auto text-blue-600">{{ person.nickname }} <i class="fas fa-fire text-salmon"></i></h1>
+                            <!-- <div v-for="tag in person.hashtags" :key="tag" 
+                                class="text-xs text-white px-2 py-0.5 rounded-full mr-2 uppercase"
+                                :class="tag.includes('1') ? 'bg-[#A9C9FF]' : 'bg-[#FFBBEC]'">
+                              {{ tag }}
+                            </div> -->
+                          </div>
+                          <p class="text-sm">
+                            {{ person.introduction }}
+                          </p>
+                        </div>
+                      </a>
                         <div class="bg-gradient-to-b from-[#A9C9FF] to-[#FFBBEC] flex-[0_0_50px] text-lg font-bold tracking-wider text-white [writing-mode:vertical-lr] flex items-center justify-center">
                         </div>
                    </div>
@@ -186,6 +188,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import { routeLocationKey } from 'vue-router';
 
 // Swiper modules
 const SwiperAutoplay = Autoplay;
@@ -218,10 +221,11 @@ const people2 = [
   },
   {
     id: 2,
-    nickname: "꿈꾸는 돌고래",
-    imageUrl: "https://www.mensjournal.com/wp-content/uploads/2018/10/rambo-main-3.jpg?quality=86&strip=all",
+    nickname: "BAMZRARA",
+    imageUrl: "/BAMZRARA/33.jpg",
     hashtags: ["#창의", "#도전"],
-    introduction: "새로운 도전을 즐기는 꿈꾸는 돌고래입니다. 창의적인 아이디어로 세상을 바꾸고 싶어요."
+    introduction: "환희의 순간, 터지는 폭죽처럼 찬란하게",
+    link:'/ARTIST/BAMZRARA'
   },
   {
     id: 3,
